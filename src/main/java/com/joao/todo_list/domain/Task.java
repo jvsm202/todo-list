@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class Task {
     private String description;
-    private State state;
+    private TaskState state;
 
     public Task(){}
 

@@ -1,6 +1,6 @@
 package com.joao.todo_list.dto;
 
-import com.joao.todo_list.domain.State;
+import com.joao.todo_list.domain.TaskState;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,5 +8,5 @@ import lombok.Setter;
 @Setter
 public class UpdateTaskRequest {
     String description;
-    State state;
+    TaskState state;
 }
