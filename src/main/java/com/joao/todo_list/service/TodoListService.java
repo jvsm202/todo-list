@@ -25,17 +25,14 @@ public class TodoListService {
 
     public Task getTask(int id){
         int lastId = taskList.getLast().getId();
-
         if(id > lastId) return null;
-        Task task = null;
 
         for(Task currTask : taskList){
-            if(currTask.getId() == lastId){
-                task = currTask;
-                break;
+            if(currTask.getId() == id){
+                return currTask;
             }
         }
-        return task;
+        return null;
     }
 
     public Task update(int id, UpdateTaskRequest updateTask){
