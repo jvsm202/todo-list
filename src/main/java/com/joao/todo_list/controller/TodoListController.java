@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/todo-list")
 public class TodoListController {
     @Autowired
-    TodoListService todoListService;
+    private TodoListService todoListService;
 
     @PostMapping
     public Task createTask(@RequestBody CreateTaskRequest createTaskRequest){

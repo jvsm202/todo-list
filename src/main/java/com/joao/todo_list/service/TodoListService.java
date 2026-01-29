@@ -11,8 +11,8 @@ import java.util.List;
 
 @Service
 public class TodoListService {
-    int id = 1;
-    List<Task> taskList = new ArrayList<>();
+    private int id = 1;
+    private List<Task> taskList = new ArrayList<>();
 
     public Task create(CreateTaskRequest createTaskRequest){
         Task task = new Task();

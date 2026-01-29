@@ -7,6 +7,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UpdateTaskRequest {
-    String description;
-    TaskState state;
+    private String description;
+    private TaskState state;
 }
