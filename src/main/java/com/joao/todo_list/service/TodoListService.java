@@ -30,7 +30,7 @@ public class TodoListService {
         Task task = null;
 
         for(Task currTask : taskList){
-            if(currTask.getId() == lastId){
+            if(currTask.getId() == id){
                 task = currTask;
                 break;
             }
